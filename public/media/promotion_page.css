@@ -1,0 +1,10 @@
+
+
+@media (max-width: 575px) {
+    
+    .promotion-info img {
+        width: 200px;
+        height: 200px;
+    }
+    
+}

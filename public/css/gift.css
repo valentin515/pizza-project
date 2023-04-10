@@ -1,0 +1,30 @@
+
+
+.gift-item:not(:last-child),
+.gifts-content h4 {
+    margin-bottom: 15px;
+}
+
+.gift-item {
+    display: flex;
+    gap: 20px;
+    cursor: pointer;
+}
+
+.gifts-content {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.gifts-content.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.gift-info h3 {
+    margin-bottom: 5px;
+}
+
+.gift-item:hover .gift-info h3 {
+    color: var(--orange);
+}
