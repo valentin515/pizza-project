@@ -1,0 +1,326 @@
+
+.aside{
+    position: relative;
+    height: 100%;
+    width: 450px;
+}
+
+
+.cart-content,
+.gifts-content {
+    width: 100%;
+    height: 100%;
+    background-color: var(--white);
+    padding: 20px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    overflow-y: auto;
+}
+
+
+.cart-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.btn-back {
+    width: 24px;
+    height: 24px;
+    background: url("../img/arrow-back.svg") no-repeat left top;
+}
+
+.btn-back-other {
+    margin-bottom: 5px;
+}
+
+
+.cart-items > *:not(:last-child) {
+    margin-bottom: 15px;
+}
+
+
+
+.cart-info {
+    overflow-y: auto;
+}
+
+.cart-info h4 {
+    margin-bottom: 10px;
+}
+
+.cart-items-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.btn-clear:hover {
+    color: var(--orange);
+}
+
+
+.btn-remove,
+.btn-notification {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.btn-notification {
+    justify-content: center;
+}
+
+
+.item .btn-remove {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.btn-remove svg {
+    fill: var(--gray);
+}
+
+.btn-remove:hover svg {
+    fill: var(--orange);
+}
+
+.item {
+    position: relative;
+    padding-top: 20px;
+}
+
+.item:not(:last-child),
+.order-item:not(:last-child) {
+    margin-bottom: 12px;
+}
+
+.item-info span, 
+.order-item-text span {
+    display: block;
+}
+
+
+.item-info > *:not(:last-child) {
+    margin-bottom: 5px;
+}
+
+.item-info > *:nth-last-child(2) {
+    margin-bottom: 10px;
+}
+
+
+.item-content {
+    display: flex;
+    gap: 20px;
+}
+
+
+
+.cart-footer {
+    padding-top: 10px;
+}
+
+
+.img-block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 80px;
+}
+
+
+.img-block img {
+    width: 100%;
+    object-fit: contain;
+    object-position: center;
+    height: 100%;
+}
+
+
+.item-info, 
+.gift-info {
+    flex: 1;
+}
+
+.item-other {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.btn-plus, 
+.btn-minus {
+    width: 24px;
+    height: 24px;
+    border-radius: 4px;
+
+}
+
+.item-quantity {
+    display: flex;
+    align-items: center;
+}
+
+
+
+.item-quantity span {
+    width: 30px;
+    text-align: center;
+}
+
+
+
+
+.btn-plus {
+    background: var(--light-gray) url("../img/btnplus.svg") no-repeat center center;
+}
+
+.btn-minus {
+    background: var(--light-gray) url("../img/btnminus.svg") no-repeat center center;
+}
+
+.btn-plus:hover, 
+.btn-minus:hover{
+    background-color: var(--hover-light-gray);
+}
+
+.additional-ingredients {
+    color: var(--green);
+}
+
+.item-info.gift h3, 
+.order-item-info.gift h3{
+    color: var(--orange);
+}
+
+
+.item-info.gift .item-other {
+    justify-content: flex-end;
+}
+
+.btn-gift {
+    color: var(--orange);
+    border-radius: 6px;
+    padding:10px;
+    border: 1px solid var(--orange);
+    padding: 12px;
+    width: 100%;
+}
+
+.btn-gift:hover {
+    color: var(--white);
+    background-color: var(--orange);
+}
+
+.promo-code {
+    display: flex;
+}
+
+.promo-code.active input {
+    color: var(--green);
+}
+
+.promo-code input {
+    border: 1px solid var(--gray);
+    padding: 12px;
+    flex: 1;
+    color: var(--dark-gray);
+    border-radius: 6px 0px 0px 6px;
+}
+
+.promo-code input:focus {
+    color: var(--black);
+    border-color: var(--green);
+}
+
+.promo-code input:focus + button {
+    background-color: var(--green);
+}
+
+
+
+.promo-code button {
+    background-color: var(--gray);
+    color: var(--white);
+    padding: 12px;
+    border-radius: 0px 6px 6px 0px;
+    width: 100px;
+}
+
+.step, 
+.restaurant-address,
+.btn-ingredients {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.step {
+    color: var(--dark-gray);
+}
+
+.step svg {
+    fill: var(--dark-gray);
+}
+
+.step-check {
+    margin-bottom: 8px;
+}
+
+.step.active {
+    color: var(--black);
+}
+
+.step-check.active svg {
+    fill: var(--green);
+}
+
+.step-gift.active svg {
+    fill: var(--orange);
+}
+
+
+.delivery-order, 
+.amount-order, 
+.total-order {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cart-footer .amount-order {
+    font-size: 17px;
+    margin-bottom: 10px;
+}
+
+.total-order {
+    font-size: 18px;
+}
+
+.delivery-order, 
+.order-price .amount-order {
+    font-size: 16px;
+    color: var(--dark-gray);
+    padding: 0;
+}
+
+.delivery-order span, 
+.order-price .amount-order span {
+    font-size: 16px;
+}
+
+.amount-order span {
+    font-size: 17px;
+}
+
+.total-order span {
+    font-size: 18px;
+}

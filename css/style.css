@@ -1,0 +1,21 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@400;600;700&display=swap');
+
+
+@import 'reset.css';
+@import 'index.css';
+@import 'popup.css';
+@import 'cart.css';
+@import 'gift.css';
+@import 'promotion.css';
+@import 'promotion_page.css';
+@import 'contacts.css';
+@import 'order.css';
+
+
+@import '../media/index.css';
+@import '../media/popup.css';
+@import '../media/cart.css';
+@import '../media/promotion_page.css';
+@import '../media/contacts.css';
+@import '../media/order.css';

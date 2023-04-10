@@ -1,0 +1,209 @@
+.popup, 
+.aside-wrapper,
+.thanks {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    background-color: var(--blackout);
+    top: 0;
+    left: 0;
+    z-index: 600;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.popup,
+.thanks {
+    overflow-y: auto;
+}
+
+.aside-wrapper{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.popup-body,
+.thanks-body {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    min-height: 100%;
+}
+
+.popup-content {
+    padding: 25px;
+    border-radius: 10px;
+    background-color: var(--white);
+    max-width: 680px;
+    min-width: 680px;
+    display: flex;
+    gap: 30px;
+    position: relative;
+    height: 500px;
+}
+
+.thanks-content {
+    padding: 25px;
+    border-radius: 10px;
+    background-color: var(--white);
+    max-width: 500px;
+    position: relative;
+}
+
+.thanks-content h2 {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 7px;      
+}
+.thanks-content p {
+    line-height: 1.4;
+}
+
+
+.popup-block {
+    display: flex;
+    flex-direction: column;
+    flex: 0 1 360px;
+    justify-content: space-between;
+}
+
+.btn-popup-close,  .btn-thanks-close{
+    position: absolute;
+    cursor: pointer;
+    top: -25px;
+    right: 0px;
+}
+
+.btn-popup-close svg, .btn-thanks-close svg {
+    fill: var(--light-gray);
+}
+
+.btn-popup-close:hover svg, .btn-thanks-close:hover svg {
+    fill: var(--orange);
+}
+
+
+.popup-img {
+    display: flex;
+    align-items: center;
+    position: relative;
+    flex: 0 1 240px;
+}
+
+.popup-img img {
+    width: 100%;
+    height: 255px;
+    object-fit: contain;
+    object-position: center;
+}
+
+.popup-dough, .radio-contacts {
+    width: 248px;
+}
+
+.popup-size {
+    width: 220px;
+}
+
+.size {
+    display: inline-block;
+}
+
+.popup-info {
+    overflow-y: scroll;
+}
+
+.popup-info-pizza {
+    /* min-height: 490px; */
+}
+
+.popup-info-product {
+    /* min-height: 300px; */
+}
+
+
+.popup-info::-webkit-scrollbar, 
+.cart-info::-webkit-scrollbar {
+    width: 20px;
+}
+
+.popup-info::-webkit-scrollbar-thumb, 
+.cart-info::-webkit-scrollbar-thumb {
+    background-color: var(--gray);
+    border-radius: 11px;
+    border: 7px solid var(--white);
+   
+}
+
+
+.title-ingredient {
+    font-size: 16px;
+    display: inline-block;
+}
+
+.ingredients-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.ingredient-card {
+    background-color: var(--light-gray);
+    border: 1px solid var(--dark-gray);
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    justify-content:space-between;
+    cursor: pointer;
+    position: relative;
+    margin: 0px 10px 10px 0px;
+    min-height: 119px;
+    user-select: none;
+}
+
+
+.ingredient-item:checked + label{
+    background-color: var(--white);
+    border: 1px solid var(--green);
+    box-shadow: 1px 1px 2px var(--green);
+}
+
+.ingredient-item:checked + label::before {
+    content: "";
+    position: absolute;
+    width: 17px;
+    height: 17px;
+    top: 7px;
+    right: 7px;
+    background: url(../img/check.svg) no-repeat center center;
+}
+
+.ingredient-img {
+    width: 38px;
+    height: 38px;
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.ingredient-title {
+    font-size: 12px;
+}
+
+
+
+a.btn-main {
+    display: inline-block;
+}
+
+
+.btn-popup, .btn-cart {
+    width: 100%;
+}
+
+.cart-item-title, 
+.cart-item-dough {
+    margin-bottom: 5;
+}

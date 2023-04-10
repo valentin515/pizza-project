@@ -1,0 +1,28 @@
+
+.contacts-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.contacts-ul li:not(:last-child) {
+    margin-bottom: 20px;
+} 
+
+.link-mail {
+    color: var(--green);
+}
+
+.link-phone {
+    color: var(--orange);
+}
+
+.contacts-content img {
+    width: 400px;
+    height: 400px;
+    object-position: center;
+    object-fit: contain;
+    border-radius: 50%;
+}
+

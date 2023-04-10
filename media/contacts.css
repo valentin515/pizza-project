@@ -1,0 +1,41 @@
+@media (max-width: 991px) {
+    .contacts-ul li,
+    .link-mail,
+    .link-phone {
+        font-size: 18px;
+    }
+    .contacts-content img {
+        width: 300px;
+        height: 300px;
+    }
+    .contacts-content {
+        gap: 40px;
+    }
+    .contacts-ul li:not(:last-child) {
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 767px) {
+    .contacts-content {
+        flex-direction: column-reverse;
+    }
+    .contacts-ul li:not(:last-child) {
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 575px) {
+    .contacts-content {
+        gap: 20px;
+    }
+    .contacts-ul li,
+    .link-mail,
+    .link-phone {
+        font-size: 16px;
+    }
+    .contacts-content img {
+        width: 200px;
+        height: 200px;
+    }
+}
